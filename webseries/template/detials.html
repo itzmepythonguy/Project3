@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>detail page</title>
+</head>
+<body style="background-color:#FDF2E9 ;">
+<div class="container">
+     <div class="row">
+         <div class="col-md-6">
+
+
+  <img src="{{web.img.url}}" width="400" height="250" alt="">
+             </div>
+       <div class=col-md-6">
+
+    <h2 style="color:blue;text-align:center;font-size:30"; >{{web.name}}</h2>
+           <h3 style="color:blue;text-align:center;">{{web.year}}</h3><br>
+    <p style="color:blue;font-size:30";>{{web.desc}}</p>
+           <a  class='btn btn-primary' href="{% url 'series:update' web.id %}">update</a>
+           <a class='btn btn-primary' href="{% url 'series:delete' web.id %}">Delete</a>
+
+
+
+
+  </div>
+                 </div>
+             </div>
+
+</body>
+{% endblock %}
+</html>

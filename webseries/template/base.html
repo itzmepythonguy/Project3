@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Favourite webseries</title>
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+</head>
+<body>
+<!-- Image and text -->
+<nav class="navbar fixed-top navbar-light bg-light" style="background-color: #e3f2fd;">
+  <a class="navbar-brand" href="#">Favourite Webseries</a>
+    <a href="{% url 'series:add' %}"class="btn btn-primary ">Add</a>
+</nav>
+
+<script src =  "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+{% block body %}
+{% endblock %}
+
+
+</body>
+</html>

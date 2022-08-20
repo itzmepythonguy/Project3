@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete</title>
+    <style>
+        form{ text-align:center;
+        }
+button{ background-color:cyan;}</style>
+</head>
+<body>
+<form method="POST">
+    {% csrf_token %}
+    <p style="color:violet;" >are you want to delete?</p>
+    <button type="submit">Delete</button>
+</form>
+
+</body>
+{% endblock %}
+</html>
